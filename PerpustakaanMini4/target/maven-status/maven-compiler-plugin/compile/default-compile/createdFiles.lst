@@ -1,0 +1,6 @@
+Model\Buku.class
+Service\PerpustakaanService.class
+Model\CetakInfo.class
+Main\Main.class
+Model\ItemPerpustakaan.class
+Model\Majalah.class
