@@ -97,7 +97,7 @@ Program ini juga sudah menerapkan MVC (Model-View-Controller):
 
 ---
 
-# Nilai Tambah
+# Penambahan
 ```
 1. Abstraction:
    - Abstract class: ItemPerpustakaan (method abstrak getInfo()).
@@ -113,7 +113,7 @@ Program ini juga sudah menerapkan MVC (Model-View-Controller):
      * cariItem(int tahunTerbit) = cari berdasarkan tahun.
      * cariItem() = memilih mode pencarian = default, minta input dari user.
 
-3. Kombinasi Abstraction & Interface:
+3. Kombinasi Abstraction & Interface (Nilai Tambah):
    - Buku dan Majalah mewarisi ItemPerpustakaan (abstract class).
    - Buku dan Majalah juga mengimplementasikan CetakInfo (interface).
 ```
