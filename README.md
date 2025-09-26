@@ -102,23 +102,51 @@ Program ini juga sudah menerapkan MVC (Model-View-Controller):
 1. Abstraction:
    - Abstract class: ItemPerpustakaan (method abstrak getInfo()).
    - Interface: CetakInfo (method cetakDetail()).
+   - Abstract class dipakai untuk menyatukan struktur dasar item perpustakaan.
+   - Interface dipakai agar semua item bisa punya method cetakDetail() walaupun berbeda jenis.
 
 2. Polymorphism:
    - Overriding:
      * getInfo() dan toString() pada Buku & Majalah.
    - Overloading:
-     * cariItem(String keyword)
-     * cariItem(int tahunTerbit)
-     * cariItem() = memilih mode pencarian.
+     * cariItem(String keyword) = cari berdasarkan judul/penulis.
+     * cariItem(int tahunTerbit) = cari berdasarkan tahun.
+     * cariItem() = memilih mode pencarian = default, minta input dari user.
 
 3. Kombinasi Abstraction & Interface:
    - Buku dan Majalah mewarisi ItemPerpustakaan (abstract class).
    - Buku dan Majalah juga mengimplementasikan CetakInfo (interface).
 ```
 
+## Penerapan Abstraction
+- Abstract class: `ItemPerpustakaan` (method abstrak `getInfo()`).
+- Interface: `CetakInfo` (method `cetakDetail()`).
+- Buku dan Majalah mewarisi `ItemPerpustakaan` sekaligus mengimplementasikan `CetakInfo`.
+
+## Penerapan Polymorphism
+- Overriding:
+  * `getInfo()` di-override di `Buku` dan `Majalah`.
+  * `toString()` di-override di `Buku` dan `Majalah`.
+- Overloading:
+  * `cariItem(String keyword)`
+  * `cariItem(int tahunTerbit)`
+  * `cariItem()` (meminta input dari user).
+
+- Contoh penerapan **Abstraction (class/interface yang digunakan)**:
+
+<img width="1072" height="809" alt="{1BE5777D-6400-48F0-9642-8747BA5BF2B0}" src="https://github.com/user-attachments/assets/f060e8d1-a500-4105-a50d-0a5e57b97b60" />
+<img width="1069" height="845" alt="{51E6EB86-D0E8-4F64-B8C2-AE3EAAAD1418}" src="https://github.com/user-attachments/assets/7b72ebc9-cfa7-4aea-9c3e-3d4e28065a42" />
+<img width="303" height="111" alt="{17FD6C8E-5109-41A7-BC00-6A389622264C}" src="https://github.com/user-attachments/assets/78d76532-fbc6-419b-9238-4a4846ee6de5" />
 
 
-Contoh output:
+- Contoh penerapan **Polymorphism (Overloading & Overriding)**:
+
+<img width="1071" height="712" alt="{DB1FF1B1-091B-4571-A54F-BA7F453D378F}" src="https://github.com/user-attachments/assets/45f30a58-5121-4483-8a0d-dc05d103bc04" />
+<img width="1059" height="763" alt="{CE7E7607-D655-4CD3-A664-7CC8F4A0A593}" src="https://github.com/user-attachments/assets/a6429fcc-6869-4037-a33b-cd90dbc6f824" />
+
+
+
+## Contoh output:
 
 <img width="259" height="139" alt="{908DC621-AC4D-45A4-8B1D-BDAB93176B00}" src="https://github.com/user-attachments/assets/dc77c999-575c-467d-bcd5-929ece7b951d" />
 
