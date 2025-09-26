@@ -109,7 +109,7 @@ Program ini juga sudah menerapkan MVC (Model-View-Controller):
    - Overloading:
      * cariItem(String keyword)
      * cariItem(int tahunTerbit)
-     * cariItem() → memilih mode pencarian.
+     * cariItem() = memilih mode pencarian.
 
 3. Kombinasi Abstraction & Interface:
    - Buku dan Majalah mewarisi ItemPerpustakaan (abstract class).
