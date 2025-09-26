@@ -45,11 +45,11 @@ Fitur yang diterapkan:
 - **Fitur search** untuk mencari berdasarkan judul (atau penulis khusus Buku).
 
 Program ini juga sudah menerapkan MVC (Model-View-Controller):
-- Model ItemPerpustakaan, Buku, Majalah
-  - Menyimpan struktur data Buku dan Majalah di ItemPerpustakaan serta menyediakan constructor, getter, dan setter.
+- Model ItemPerpustakaan, Buku, Majalah, CetakInfo
+  - Menyimpan struktur data Buku dan Majalah di ItemPerpustakaan serta menyediakan constructor, getter, dan setter (CetakInfo sebagai interface).
 - Controller (Service.PerpustakaanService)  
   - Menangani logika CRUD (Create, Read, Update, Delete), validasi input, serta fitur pencarian.  
-- View (Main.Main)
+- View (Main.java)
   - Berperan sebagai entry point program, menampilkan menu ke pengguna, menerima input, dan memanggil method dari PerpustakaanService. 
 
 ## Struktur Package
